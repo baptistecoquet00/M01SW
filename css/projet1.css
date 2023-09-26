@@ -21,8 +21,10 @@ p{
     padding-left: 50px;
 }
 #image{
-    position: ;
-    border-width: 400px;
+    position: relative ;
+    width: 50%;
+    right:400px;
+
 }
 ul{
     padding-left: 100px;

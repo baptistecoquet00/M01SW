@@ -22,8 +22,9 @@ p{
 }
 #image{
     position: relative ;
-    width: 50%;
-    right:400px;
+    width: 400px;
+    left: 760px;
+    top: 95px;
 
 }
 ul{

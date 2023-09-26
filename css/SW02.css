@@ -1,15 +1,27 @@
 body {
-    background-color: #e5e5e5;
     font-family:  Courier New;
     margin: 0px;
     padding-left: 22px;
     font-size: 16px;
    }
 #presentation{
-    background: #DDDDDD;
     text-align: left;
+    border-collapse: unset;
+    border-color: #FF715B;
+    border-width: 400px;
+    margin: 50px;
+    border: 10px;
+
+}
+td#presentation:hover{
+    background: #DDDDDD;
+    transform: scale(1.1);
 }   
 th{
     background: #FF715B;
-    
+    padding: 12px 20px 8px 8px;
+    color: white ;
+}
+td.lignepair{
+    background: #f2f2f254;
 }

@@ -19,7 +19,7 @@ table{
     border-collapse: collapse;
     border-color: #FF715B;
     border-width: 400px;
-    margin: 50px;
+    margin: 50px 50px 50px 50px;
 }
 td:hover{
     background-color: #ddd;

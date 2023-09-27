@@ -1,27 +1,35 @@
 body {
+    background-color: #e5e5e5;
     font-family:  Courier New;
     margin: 0px;
     padding-left: 22px;
     font-size: 16px;
    }
-#presentation{
+/*#liste{
     text-align: left;
-    border-collapse: unset;
+    border-collapse: collapse;
     border-color: #FF715B;
     border-width: 400px;
     margin: 50px;
-    border: 10px;
-
+}*/
+table{
+    margin: 1px solid grey;
+    display: inline;
+    text-align: left;
+    border-collapse: collapse;
+    border-color: #FF715B;
+    border-width: 400px;
+    margin: 50px;
 }
-td#presentation:hover{
-    background: #DDDDDD;
-    transform: scale(1.1);
+td:hover{
+    background-color: #ddd;
 }   
 th{
+    
     background: #FF715B;
     padding: 12px 20px 8px 8px;
     color: white ;
 }
 td.lignepair{
-    background: #f2f2f254;
+    background-color: #F2F2F2;
 }

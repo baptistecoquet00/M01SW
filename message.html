@@ -8,23 +8,102 @@
 </head>
 <body>
     <section id="message">
-        <form>
+        <form method="POST" action="rest.php">
             <label>Sélectionner un afficheur :</label>
             <select>
-                <option>CP A</option>
-                <option>CP B</option>
-                <option>CE1 A</option>
-                <option>CE1 B</option>
-                <option>CE2 A</option>
-                <option>CE2 B</option>
-                <option>CM1 A</option>
-                <option>CM1 B</option>
-                <option>CM2 A</option>
-                <option>CM2 A</option>
+                <option value="172.20.21.230">CP A</option>
+                <option value="172.20.21.231">CP B</option>
+                <option value="172.20.21.232">CE1 A</option>
+                <option value=">172.20.21.233">CE1 B</option>
+                <option value=">172.20.21.234">CE2 A</option>
+                <option value=">172.20.21.235">CE2 B</option>
+                <option value=">172.20.21.236">CM1 A</option>
+                <option value=">172.20.21.237">CM1 B</option>
+                <option value=">172.20.21.238">CM2 A</option>
+                <option value=">172.20.21.239">CM2 A</option>
             </select>
-           <label>Indiquer le message:</label>
-           <input type="Text" name="message"> 
-            <input type="submit" name="Envoyer">
+           <label for="mess">Indiquer le message:</label>
+           <input type="Text" name="message" id="mess"> 
+            
+            <label>L'effet d'apparition :</label>
+            <select name="effetapparition" id="select-effetapparition"> 
+                <option value="FA">Immediate </option>
+                <option value="FB">Xopen </option>
+                <option value="FC">Curtain UP </option>
+                <option value="FD">Curtain Down </option>
+                <option value="FE">Scroll Left </option>
+                <option value="FF">Scroll Right </option>
+                <option value="FG">Vopen </option>
+                <option value="FH">Vclose </option>
+                <option value="FI">Scroll Up </option>
+                <option value="FJ">Scroll Down </option>
+                <option value="FK">Hold </option>
+                <option value="FL">Snow </option>
+                <option value="FM">Twinkle </option>
+                <option value="FN">Block Move </option>
+                <option value="FP">Random </option>
+                <option value="FQ">Pen writing ‘Hello World’ </option>
+                <option value="FR">Pen writing ‘Welcome’ </option>
+                <option value="FS">Pen writing ‘Amplus’ </option>
+            </select>
+            <label>L'effet d'affichage :</label>
+            <select id="select-effetaffichage" name="effetaffichage">
+                <option value="MA">Speed Level 1 Normal </option>
+                <option value="MB">Speed Level 1 Blinking </option>
+                <option value="MC">Speed Level 1 Play pre-defined song 1 </option>
+                <option value="MD">Speed Level 1 Play pre-defined song 2 </option>
+                <option value="ME">Speed Level 1 Play pre-defined song 3</option>
+                <option value="MQ">Speed Level 2 Normal </option>
+                <option value="MR">Speed Level 2 Blinking </option>
+                <option value="MS">Speed Level 2 IPlay pre-defined song 1 </option>
+                <option value="MT">Speed Level 2 Play pre-defined song 2  </option>
+                <option value="MU">Speed Level 2 Play pre-defined song 3 </option>
+                <option value="Ma">Speed Level 3 Normal </option>
+                <option value="Mb">Speed Level 3 Blinking </option>
+                <option value="Mc">Speed Level 3 Play pre-defined song 1 </option>
+                <option value="Md">Speed Level 3 Play pre-defined song 2  </option>
+                <option value="Me">Speed Level 3 Play pre-defined song 3 </option>
+                <option value="Mq">Speed Level 4 Normal </option>
+                <option value="Mr">Speed Level 4 Blinking </option>
+                <option value="Ms">Speed Level 4 Play pre-defined song 1 </option>
+                <option value="Mt">Speed Level 4 Play pre-defined song 2  </option>
+                <option value="Mu">Speed Level 4 Play pre-defined song 3 </option>
+            </select>
+            <label>L'effet de la durée d'affichage :</label>
+            <select id="select-dureeaffichage" name="dureeaffichage">
+                <option value="WA">0.5 sec</option>
+                <option value="WB">1 sec</option>
+                <option value="WC">2 sec</option>
+                <option value="WD">3 sec</option>
+                <option value="WE">4 sec</option>
+                <option value="WF">5 sec</option>
+                <option value="WG">6 sec</option>
+                <option value="WH">7 sec</option>
+                <option value="WI">8 sec</option>
+                <option value="WJ">9 sec</option>
+                <option value="WK">10 sec</option>
+                <option value="WL">11 sec</option>
+                <option value="WM">12 sec</option>
+                <option value="WN">13 sec</option>
+                <option value="WO">14 sec</option>
+                <option value="WP">15 sec</option>
+                <option value="WQ">16 sec</option>
+                <option value="WR">17 sec</option>
+                <option value="WS">18 sec</option>
+                <option value="WT">19 sec</option>
+                <option value="WU">20 sec</option>
+                <option value="WV">21 sec</option>
+                <option value="WW">22 sec</option>
+                <option value="WX">23 sec</option>
+                <option value="WY">24 sec</option>
+                <option value="WZ">25 sec</option>
+            </select>
+            <label>L'effet de disparition :</label>
+            <select id="select-effetdisparition" name="effetdisparition">
+                <option value="FA">Immediate</option>
+                
+            </select>
+            <input type="button" name="Envoyer" >
         </form>
     </section>
 </body>

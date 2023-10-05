@@ -1,0 +1,57 @@
+header{
+    grid-area: entete;
+}
+header,nav,footer{
+    background-color: #FF715B;
+    color: white;
+}
+h1.header{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    font-variant: small-caps;
+}
+nav{
+    grid-area: navigation;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+p.nav{
+    padding: 10px 10px 10px 10px;
+}
+span.nav{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+section{
+    grid-area: principale;
+    padding: 10px 10px 10px 10px;
+}
+aside{
+    grid-area: liens;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+    color: black;
+    background: linear-gradient(orange,white,orange);
+    border-radius: 10px;
+}
+footer{
+    grid-area: pied;
+    font-size: 22px;
+    text-align: center;
+}
+body{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "entete entete"
+                         "navigation navigation "
+                         "principale liens"
+                          "pied pied";
+    grid-template-rows: 150px 40px minmax(400px, auto) auto;
+    grid-template-columns: 1fr 300px;
+}

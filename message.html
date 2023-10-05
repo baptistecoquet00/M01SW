@@ -9,8 +9,8 @@
 <body>
     <section id="message">
         <form method="POST" action="rest.php">
-            <label>Sélectionner un afficheur :</label>
-            <select>
+            <label for="select-journal">Sélectionner un afficheur :</label>
+            <select name="journal" id="select-journal">
                 <option value="172.20.21.158">CP A</option>
                 <option value="172.20.21.158">CP B</option>
                 <option value="172.20.21.158">CE1 A</option>
@@ -25,7 +25,7 @@
            <label for="mess">Indiquer le message:</label>
            <input type="Text" name="texte" id="mess"> 
             
-            <label>L'effet d'apparition :</label>
+            <label for="select-effetapparition">L'effet d'apparition :</label>
             <select name="effetapparition" id="select-effetapparition"> 
                 <option value="FA">Immediate </option>
                 <option value="FB">Xopen </option>
@@ -46,7 +46,7 @@
                 <option value="FR">Pen writing ‘Welcome’ </option>
                 <option value="FS">Pen writing ‘Amplus’ </option>
             </select>
-            <label>L'effet d'affichage :</label>
+            <label for="select-effetaffichage">L'effet d'affichage :</label>
             <select id="select-effetaffichage" name="effetaffichage">
                 <option value="MA">Speed Level 1 Normal </option>
                 <option value="MB">Speed Level 1 Blinking </option>
@@ -69,7 +69,7 @@
                 <option value="Mt">Speed Level 4 Play pre-defined song 2  </option>
                 <option value="Mu">Speed Level 4 Play pre-defined song 3 </option>
             </select>
-            <label>L'effet de la durée d'affichage :</label>
+            <label for="select-dureeaffichage">L'effet de la durée d'affichage :</label>
             <select id="select-dureeaffichage" name="dureeaffichage">
                 <option value="WA">0.5 sec</option>
                 <option value="WB">1 sec</option>
@@ -98,7 +98,7 @@
                 <option value="WY">24 sec</option>
                 <option value="WZ">25 sec</option>
             </select>
-            <label>L'effet de disparition :</label>
+            <label for="select-effetdisparition">L'effet de disparition :</label>
             <select id="select-effetdisparition" name="effetdisparition">
                 <option value="FA">Immediate </option>
                 <option value="FB">Xopen </option>
@@ -119,7 +119,8 @@
                 <option value="FR">Pen writing ‘Welcome’ </option>
                 <option value="FS">Pen writing ‘Amplus’ </option>
             </select>
-            <input type="button" name="Envoyer" >
+            <input type="submit" value="Envoyer">
+            <!--<input type="button" name="Envoyer" value="Envoyer" />-->
         </form>
     </section>
 </body>
